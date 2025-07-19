@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
+import 'media_compressor_exception.dart';
 
 import 'media_compressor_platform_interface.dart';
 

@@ -1,6 +1,15 @@
 import 'package:flutter/services.dart';
 import 'media_compressor_platform_interface.dart';
 
+class MediaCompressorException implements Exception {
+  final String message;
+  
+  MediaCompressorException(this.message);
+  
+  @override
+  String toString() => message;
+}
+
 class MediaCompressor {
   static const MethodChannel _channel = MethodChannel('media_compressor');
 

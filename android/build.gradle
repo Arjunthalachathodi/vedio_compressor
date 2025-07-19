@@ -9,9 +9,6 @@ buildscript {
     }
 
     dependencies {
-
-    implementation 'com.arthenica:ffmpeg-kit-full:5.1.LTS'
-
         classpath("com.android.tools.build:gradle:8.1.0")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version")
     }
@@ -21,6 +18,7 @@ allprojects {
     repositories {
         google()
         mavenCentral()
+        maven { url 'https://jitpack.io' } 
     }
 }
 
@@ -53,6 +51,8 @@ android {
     }
 
     dependencies {
+        implementation 'com.arthenica:ffmpeg-kit-full:5.1.LTS'
+        
         testImplementation("org.jetbrains.kotlin:kotlin-test")
         testImplementation("org.mockito:mockito-core:5.0.0")
     }
